@@ -54,6 +54,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="EmacsKeys\Commands\Navigation\MoveBeginningOfLineCommand.cs" />
     <Compile Include="EmacsKeys\EmacsKeysPackage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -65,6 +66,10 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <VSCTCompile Include="EmacsKeys\Commands\Navigation\EmacsKeysPackage.vsct">
+      <ResourceName>Menus.ctmenu</ResourceName>
+    </VSCTCompile>
+    <Content Include="EmacsKeys\Commands\Navigation\Resources\MoveBeginningOfLineCommand.png" />
     <Content Include="EmacsKeys\Resources\EmacsKeysPackage.ico" />
     <Content Include="index.html" />
     <Content Include="stylesheet.css" />
@@ -168,9 +173,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="EmacsKeys\Commands\Navigation\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="EmacsKeys\VSPackage.resx">
       <MergeWithCTO>true</MergeWithCTO>

@@ -3,6 +3,8 @@ using System.ComponentModel.Design;
 using System.Globalization;
 using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
+using EnvDTE;
+using EnvDTE80;
 
 namespace EmacsiStudio.EmacsKeys.Commands.Navigation
 {
@@ -87,17 +89,13 @@ namespace EmacsiStudio.EmacsKeys.Commands.Navigation
         /// <param name="e">Event args.</param>
         private void MenuItemCallback(object sender, EventArgs e)
         {
-            string message = string.Format(CultureInfo.CurrentCulture, "Inside {0}.MenuItemCallback()", this.GetType().FullName);
-            string title = "MoveBeginningOfLineCommand";
+            var dte = (DTE2)ServiceProvider.GetService(typeof(DTE));
+            var selection = (TextSelection)dte.ActiveDocument.Selection;
+            var current_column = selection.CurrentColumn;
 
-            // Show a message box to prove we were here
-            VsShellUtilities.ShowMessageBox(
-                this.ServiceProvider,
-                message,
-                title,
-                OLEMSGICON.OLEMSGICON_INFO,
-                OLEMSGBUTTON.OLEMSGBUTTON_OK,
-                OLEMSGDEFBUTTON.OLEMSGDEFBUTTON_FIRST);
+            selection.StartOfLine(vsStartOfLineOptions.vsStartOfLineOptionsFirstText);
+            if (selection.CurrentColumn == current_column)
+                selection.StartOfLine(vsStartOfLineOptions.vsStartOfLineOptionsFirstColumn);
         }
     }
 }

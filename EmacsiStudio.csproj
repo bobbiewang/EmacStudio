@@ -69,7 +69,6 @@
     <VSCTCompile Include="EmacsKeys\EmacsKeysPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>
-    <Content Include="EmacsKeys\Commands\Navigation\Resources\MoveBeginningOfLineCommand.png" />
     <Content Include="EmacsKeys\Resources\EmacsKeysPackage.ico" />
     <Content Include="index.html" />
     <Content Include="stylesheet.css" />

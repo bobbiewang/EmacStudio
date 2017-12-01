@@ -23,8 +23,8 @@
     <ProjectGuid>{003A56C2-13BB-4948-B413-B3AAEC1D5FD4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>EmacsiStudio</RootNamespace>
-    <AssemblyName>EmacsiStudio</AssemblyName>
+    <RootNamespace>EmacStudio</RootNamespace>
+    <AssemblyName>EmacStudio</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <GeneratePkgDefFile>true</GeneratePkgDefFile>
     <IncludeAssemblyInVSIXContainer>true</IncludeAssemblyInVSIXContainer>

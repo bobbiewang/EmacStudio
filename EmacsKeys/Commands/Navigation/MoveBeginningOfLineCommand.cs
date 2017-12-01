@@ -6,7 +6,7 @@ using Microsoft.VisualStudio.Shell.Interop;
 using EnvDTE;
 using EnvDTE80;
 
-namespace EmacsiStudio.EmacsKeys.Commands.Navigation
+namespace EmacStudio.EmacsKeys.Commands.Navigation
 {
     /// <summary>
     /// Command handler

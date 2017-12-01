@@ -26,7 +26,7 @@
     <Buttons>
       <Button guid="guidEmacsKeysPackageCmdSet" id="MoveBeginningOfLineCommandId" priority="0x0100" type="Button">
         <Strings>
-          <LocCanonicalName>EmacsiStudio.MoveBeginningOfLine</LocCanonicalName>
+          <LocCanonicalName>EmacStudio.MoveBeginningOfLine</LocCanonicalName>
           <ButtonText>MoveBeginningOfLineCommand</ButtonText>
         </Strings>
       </Button>

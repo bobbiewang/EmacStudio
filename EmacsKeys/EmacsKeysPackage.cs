@@ -10,7 +10,7 @@ using Microsoft.VisualStudio.Shell;
 using Microsoft.VisualStudio.Shell.Interop;
 using Microsoft.Win32;
 
-namespace EmacsiStudio.EmacsKeys
+namespace EmacStudio.EmacsKeys
 {
     /// <summary>
     /// This is the class that implements the package exposed by this assembly.
@@ -61,7 +61,7 @@ namespace EmacsiStudio.EmacsKeys
         protected override void Initialize()
         {
             base.Initialize();
-            EmacsiStudio.EmacsKeys.Commands.Navigation.MoveBeginningOfLineCommand.Initialize(this);
+            EmacStudio.EmacsKeys.Commands.Navigation.MoveBeginningOfLineCommand.Initialize(this);
         }
 
         #endregion

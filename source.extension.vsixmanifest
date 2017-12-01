@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="EmacsiStudio.2ad29b39-765a-4533-b9e6-a20741fde256" Version="1.0" Language="en-US" Publisher="Bo Wang" />
+        <Identity Id="EmacStudio.2ad29b39-765a-4533-b9e6-a20741fde256" Version="1.0" Language="en-US" Publisher="Bo Wang" />
         <DisplayName>Emacsi Studio</DisplayName>
         <Description xml:space="preserve">Emacs keybindings for Visual Studio.</Description>
     </Metadata>
